@@ -11,13 +11,17 @@ def single_letter_count(word, letter):
         3
     """
 
+    count=0 
 
-    # for x in word.lower():
-    #     count=0
-    #     if x==letter:
-    #         return count+=1
+    for x in word.lower():
+        # count=0
+        if x==letter:
+            count+=1
+    return count
 
-    return word.lower().count(letter.lower())
+
+    # return word.lower().count(letter.lower())
+
 
 print(single_letter_count('Hello World', 'h'))
 print(single_letter_count('Hello World', 'z'))
